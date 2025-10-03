@@ -1,13 +1,17 @@
+using System.Data;
+
 double DemoImplicitConversions()
 {
-    throw new NotImplementedException();
+    int numero = 17;
+    double resultado = numero;
+    return resultado;
 }
-
 int DemoExplicitConversions()
 {
-    throw new NotImplementedException();
+    double numero = 23.89;
+    int resultado = (int)numero;
+    return resultado;
 }
-
 
 decimal originalValue = decimal.Parse(args.Length > 0 ? args[0] : "23.89");
 int targetInt = int.Parse(args.Length > 1 ? args[1] : "17");
