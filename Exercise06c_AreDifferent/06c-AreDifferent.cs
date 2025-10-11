@@ -1,6 +1,13 @@
 bool AreDifferent(int num1, int num2, int num3)
 {
-    throw new NotImplementedException();
+    if (num1 != num2 && num1 != num3 && num2 != num3)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 int num1 = int.Parse(args.Length > 0 ? args[0] : "5");

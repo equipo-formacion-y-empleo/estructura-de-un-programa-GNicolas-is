@@ -1,6 +1,13 @@
 bool IsNotNegative(int number)
 {
-    throw new NotImplementedException();
+    if (number >= 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 int number = int.Parse(args.Length > 0 ? args[0] : "0");

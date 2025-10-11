@@ -1,6 +1,13 @@
 bool IsAdult(int age)
 {
-    throw new NotImplementedException();
+    if (age >= 18)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 int age = int.Parse(args.Length > 0 ? args[0] : "20");
