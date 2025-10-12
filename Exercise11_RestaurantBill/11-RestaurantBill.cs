@@ -2,7 +2,10 @@ using System;
 
 double CalculateRestaurantBill(double subtotal, double taxPercentage, double tipPercentage, int numberOfDiners)
 {
-    throw new NotImplementedException();
+    double taxAmount = subtotal * taxPercentage;
+    double tipAmount = subtotal * tipPercentage;
+    double totalBill = subtotal + taxAmount + tipAmount;
+    return totalBill / numberOfDiners;
 }
 
 // Obtener argumentos de línea de comandos
