@@ -2,17 +2,20 @@ using System;
 
 double CalculateTriangleArea(double side)
 {
-    throw new NotImplementedException();
+    side = side / 2;
+    return (Math.Sqrt(3) / 4) * (side * side);
 }
 
 double CalculateSquareArea(double side)
 {
-    throw new NotImplementedException();
+    side = side / 2;
+    return side * side;
 }
 
 double CalculateHexagonArea(double side)
 {
-    throw new NotImplementedException();
+    side = side / 2;
+    return (3 * Math.Sqrt(3) / 2) * (side * side);
 }
 
 // Obtener argumentos de línea de comandos

@@ -1,6 +1,13 @@
 bool IsEven(int number)
 {
-    throw new NotImplementedException();
+    if (number % 2 == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 int number = int.Parse(args.Length > 0 ? args[0] : "4");

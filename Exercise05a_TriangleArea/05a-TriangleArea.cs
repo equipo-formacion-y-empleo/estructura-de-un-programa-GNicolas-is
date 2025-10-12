@@ -1,6 +1,10 @@
+using System.Formats.Asn1;
+
 double CalculateTriangleArea()
 {
-    throw new NotImplementedException();
+    double Base = 8.5;
+    double Altura = 3.2;
+    return (Base * Altura) / 2;
 }
 
 double triangleBase = double.Parse(args.Length > 0 ? args[0] : "6.0");

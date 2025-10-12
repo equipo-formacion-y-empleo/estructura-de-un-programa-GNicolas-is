@@ -2,7 +2,14 @@ using System;
 
 bool IsEvenBits(int number)
 {
-    throw new NotImplementedException();
+    if ((number & 1) == 0)
+    {
+        return true; // El número es par
+    }
+    else
+    {
+        return false; // El número es impar
+    }
 }
 
 // Obtener argumentos de línea de comandos

@@ -1,6 +1,13 @@
 bool EqualGroups(int totalElements, int groupSize)
 {
-    throw new NotImplementedException();
+    if (totalElements % groupSize == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 int totalElements = int.Parse(args.Length > 0 ? args[0] : "20");

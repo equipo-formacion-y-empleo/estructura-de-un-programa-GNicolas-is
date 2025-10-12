@@ -6,17 +6,20 @@ const double EUR_TO_GBP = 0.86;
 
 double ConvertToUSD(double euros)
 {
-    throw new NotImplementedException();
+    euros *= EUR_TO_USD;
+    return euros;
 }
 
 double ConvertToJPY(double euros)
 {
-    throw new NotImplementedException();
+    euros *= EUR_TO_JPY;
+    return euros;
 }
 
 double ConvertToGBP(double euros)
 {
-    throw new NotImplementedException();
+    euros *= EUR_TO_GBP;    
+    return euros;
 }
 
 // Obtener argumentos de línea de comandos

@@ -1,42 +1,47 @@
 double balance = 0.0;
-
-void Deposit(double amount)
+void Deposit_1(double amount)
 {
-    throw new NotImplementedException();
+    balance += amount;
+}
+void Deposit_2(double amount)
+{
+    balance += amount;
+}
+void Withdraw_1(double amount)
+{
+    balance -= amount;
+}
+void Withdraw_2(double amount)
+{
+    balance -= amount;
+}
+void ApplyInterest(double factor)
+{
+    balance *= factor;
+}
+void ApplyCommission(double factor)
+{
+    balance /= factor;
 }
 
-void Withdraw(double amount)
-{
-    throw new NotImplementedException();
-}
-
-void ApplyInterest(double interestRate)
-{
-    throw new NotImplementedException();
-}
-
-void ApplyCommission(double commissionRate)
-{
-    throw new NotImplementedException();
-}
-
+// Saldo inicial: 1000.0
 balance = double.Parse(args.Length > 0 ? args[0] : "1000,0");
 Console.WriteLine($"Saldo inicial: {balance:F2}");
 
 // Depósito 1: 250.50
-Deposit(double.Parse(args.Length > 1 ? args[1] : "250,50"));
+Deposit_1(double.Parse(args.Length > 1 ? args[1] : "250,50"));
 Console.WriteLine($"Después del depósito 1: {balance:F2}");
 
 // Depósito 2: 100.0
-Deposit(double.Parse(args.Length > 2 ? args[2] : "100,0"));
+Deposit_2(double.Parse(args.Length > 2 ? args[2] : "100,0"));
 Console.WriteLine($"Después del depósito 2: {balance:F2}");
 
 // Retiro 1: 75.25
-Withdraw(double.Parse(args.Length > 3 ? args[3] : "75,25"));
+Withdraw_1(double.Parse(args.Length > 3 ? args[3] : "75,25"));
 Console.WriteLine($"Después del retiro 1: {balance:F2}");
 
 // Retiro 2: 50.0
-Withdraw(double.Parse(args.Length > 4 ? args[4] : "50,0"));
+Withdraw_2(double.Parse(args.Length > 4 ? args[4] : "50,0"));
 Console.WriteLine($"Después del retiro 2: {balance:F2}");
 
 // Intereses: 2%
